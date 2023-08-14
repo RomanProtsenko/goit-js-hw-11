@@ -12,7 +12,7 @@ class NewsApiService {
       method: 'get',
       url: 'https://pixabay.com/api/',
       params: {
-        key: '37184780-a6424730a693355f8efd47397',
+        key: '38833534-5a079cf257db908c3807823b4',
         q: `${this.searchQuery}`,
         image_type: 'photo',
         orientation: 'horizontal',
