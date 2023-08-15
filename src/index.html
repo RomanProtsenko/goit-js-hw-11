@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery finder</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="header-container">
-      <h1 class="search-title">Search images</h1>
-      <form class="search-form" id="search-form">
-        <a href="https://pixabay.com/" target="_blank"> </a>
-        <input
-          class="search-form-input"
-          type="text"
-          name="searchQuery"
-          autocomplete="off"
-          placeholder="Search images..."
-        />
-        <button class="search-form-button" type="submit"></button>
-      </form>
+    <header>
+      <h1>Image Gallery</h1>
     </header>
     <main>
-      <section class="gallery-section">
-        <div class="gallery"></div>
-
-        <button type="button" class="load-more is-hidden">Load more</button>
-      </section>
+      <form id="searchForm">
+        <input
+          type="text"
+          name="searchQuery"
+          placeholder="Enter a search term"
+          required
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+      <div id="gallery"></div>
+      <div class="load-more">
+        <button
+          id="loadMoreButton"
+          class="load-more-button"
+          style="display: none"
+        >
+          Load more
+        </button>
+      </div>
     </main>
-
-    <script type="module" src="./js/index.js"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
